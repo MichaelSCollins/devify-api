@@ -1,0 +1,30 @@
+# Routes
+#routes:
+#    baseUrl: 'http://localhost:8080'
+#    uiUrl: 'http://localhost:3000'
+#    accountPath: '/account'
+#    loginPath: '/login'
+#    projectRequestPath: '/app-requests'
+
+# Content
+content:
+  failed-token-message: 'Failed to generate token'
+  failed-to-encode-user: 'Failed to encode user data'
+  failed-to-parse-token: 'Failed to parse JWT token'
+  failed-to-parse-user: 'Failed to parse user data'
+# OAuth
+jwt:
+  secret: 'your-very-secure-secret-key-that-is-long-enough'
+  tokenValidity: 3600000  # 1 hour in milliseconds
+  errorMessage: ''
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+#  security.oauth2.client.registration:
+#        google:
+#          client-id: 528682378406-bgr9mi9csvbv82fitg10dm1vrkmi3m5q.apps.googleusercontent.com
+#          client-secret: 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
+#          redirect-uri: http://localhost:8080/login/oauth2/code/google
+# Logging
+logging.level.org.springframework.security: TRACE
